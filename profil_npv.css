@@ -1,160 +1,126 @@
-* {
-    box-sizing: border-box;
-    color: black;
-    font-family: 'Oswald', 'Optima', "Times New Roman", Times, serif;
-    margin: 0;
-    padding: 0;
+/*------
+# General
+-------------------*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+  background: #00000062 url(https://i.ibb.co/RbKTw5j/pc.jpg);
 }
 
-.topnav{
-/* Rectangle 42 */
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-background: #1A202C;
+a {
+  color: #149ddd;
 }
 
-.imglaptop {
-/* Ellipse 8 */
-position: absolute;
-left: 17.41%;
-right: 22.47%;
-top: 7.81%;
-bottom: 74.61%;
-
-background: url(.jpg);
-border: 2px solid #FFFFFF;
-box-sizing: border-box;
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
 }
 
-.menu {
-    background-color:rgb(26, 21, 17);
-    overflow: hidden;
-    border-radius: 6px;
+/*---------
+# Header
+------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
+  
 }
 
-.menu a {
-    float: inline-end;
-    color: white;
+#header .profile img {
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:90px;
+  height:90px;
+  border: 8px solid #2c2f3f;
+  display: block;
+  margin: 15px auto;
 }
 
-.acceuil{
-/* à propos de moi */
-
-left: 27.53%;
-right: 12.97%;
-top: 41.5%;
-bottom: 55.27%;
-
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 33px;
-/* identical to box height */
-color: #FFFFFF;
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
 }
 
-
-.competences {
-position: fixed;
-left: 27.53%;
-right: 22.47%;
-top: 48.05%;
-bottom: 48.73%;
-
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 33px;
-/* identical to box height */
-
-color: #FFFFFF;
-}
-
-.metier {
-/* Compétences métier */
-position: absolute;
-left: 24.37%;
-right: 18.35%;
-top: 53.03%;
-bottom: 44.53%;
-
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-/* identical to box height */
-
-color: #FFFFFF;
-}
-
-.technologiques {
-/* Compétences technologiques */
-position: absolute;
-left: 24.37%;
-right: 33.23%;
-top: 57.52%;
-bottom: 37.6%;
-
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-color: #FFFFFF;
-}
-
-.humaines{
-/* Compétences humaines */
-position: absolute;
-left: 24.37%;
-right: 36.71%;
-top: 63.87%;
-bottom: 31.25%;
-
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-color: #FFFFFF;
-}
-
-.portfolio{
-/* Portfolio */
-position: absolute;
-left: 27.53%;
-right: 40.51%;
-top: 71.19%;
-bottom: 25.59%;
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 33px;
-/* identical to box height */
-color: #FFFFFF;
+#header .profile h1 a, #header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 
-.contact{
-/* Contact */
-position: absolute;
-left: 27.53%;
-right: 43.99%;
-top: 76.66%;
-bottom: 20.12%;
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 33px;
-/* identical to box height */
-color: #FFFFFF;
+
+/* Desktop Navigation */
+.nav-menu {
+  padding-top: 30px;
 }
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+  color: #149ddd;
+}
+
+
+.texts-header {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-align:"center"
+}
+
+/*---
+footer{
+text-align:center;
+padding: Xpx;
+position:relative;
+background-color:#040B14;
+color:#FFF;
+}*/
+
+
