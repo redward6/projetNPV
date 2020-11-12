@@ -35,7 +35,7 @@ a:hover {
   
 }
 
-#header .profile img {
+#header .profile .img-fluid {
   overflow:hidden;
   -webkit-border-radius:50px;
   -moz-border-radius:50px;
@@ -55,6 +55,8 @@ a:hover {
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
+  float: left;
+  margin-left: 3%;
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
@@ -90,6 +92,10 @@ a:hover {
   font-size: 15px;
 }
 
+.nav-menu > #metier #technologiques #humaines {
+  color: red;
+}
+
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
@@ -111,7 +117,21 @@ a:hover {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  text-align:"center"
+  text-align: center;
+}
+
+.icons_menu {
+  max-width: 7%;
+  margin-left: 24%;
+  float: left;
+  margin-top: 1%;
+}
+
+.arrow {
+  max-width: 4%;
+  margin-left: 24%;
+  float: left;
+  margin-top: 4%;
 }
 
 /*---
@@ -122,5 +142,3 @@ position:relative;
 background-color:#040B14;
 color:#FFF;
 }*/
-
-
