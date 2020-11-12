@@ -5,7 +5,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
-  background: #00000062 url(https://i.ibb.co/RbKTw5j/pc.jpg);
+  background: #00000062 url(https://i.ibb.co/RbKTw5j/pc.jpg); cover no repeat;
+  display: flex;
 }
 
 a {
@@ -106,21 +107,12 @@ a:hover {
 }
 
 
-.texts-header {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  text-align:"center"
+.titre {
+color: white;
+font-size: 4em;
+position: absolute;
+left: 50%;
+top:50%;
+transform: translateX(-50%) translateY(-50%);
+text-align: center;
 }
-
-/*---
-footer{
-text-align:center;
-padding: Xpx;
-position:relative;
-background-color:#040B14;
-color:#FFF;
-}*/
-
-
